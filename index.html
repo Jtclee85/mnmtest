@@ -79,7 +79,7 @@ source[3]=`**금동미륵보살반가사유상**이 중요한 이유는, 단순�
 **“금동미륵보살반가사유상은 한국 고대 불교미술의 아름다움, 신앙, 기술 수준을 한 번에 보여주는 대표 문화재”**라고 할 수 있어요.
 
 원하시면 제가 **수행평가용 한 문단 답안**으로도 바로 써드릴게요.`;
-const questions={material:['초등학생이 혼자 읽고 이해하기 쉽도록 어려운 용어나 개념을 학생 눈높이에 맞게 설명하고 있는가?','문화유산의 생김새와 특징을 구체적으로 파악할 수 있는가?','실제 문화유산 설명 자료에 가까운가?','학생의 학습에 필요한 핵심 정보가 충분히 포함되어 있으며, 주도적으로 탐구할 수 있는 자료인가?','초등학교 수업 자료로 바로 활용하기에 적합한가?'],response:['학생의 질문에 바로 답하고 있는가?','초등학생이 한 번 읽고 쉽게 이해할 수 있는가?','질문에 필요한 핵심 내용만 적절한 분량으로 제시하고 있는가?','원래 자료의 내용을 바탕으로 답변하고 있는가?','학생의 다음 질문이나 탐구로 자연스럽게 이어질 수 있는 답변인가?']};
+const questions={material:['초등학교 국어교과 지문과 수준에 맞도록 어려운 용어나 개념을 학생 눈높이에 맞게 설명하고 있는가?','문화유산의 생김새와 특징을 구체적으로 파악할 수 있는가?','실제 문화유산 설명 자료에 가까운가?','학생의 학습에 필요한 핵심 정보가 충분히 포함되어 있으며, 주도적으로 탐구할 수 있는 자료인가?','초등학교 수업 자료로 바로 활용하기에 적합한가?'],response:['학생의 질문에 바로 답하고 있는가?','초등학생이 한 번 읽고 쉽게 이해할 수 있는가?','질문에 필요한 핵심 내용만 적절한 분량으로 제시하고 있는가?','원래 자료의 내용을 바탕으로 답변하고 있는가?','학생의 다음 질문이나 탐구로 자연스럽게 이어질 수 있는 답변인가?']};
 const scaleLabels=['전혀 그렇지 않다','그렇지 않다','보통이다','그렇다','매우 그렇다'];
 const $=id=>document.getElementById(id);let step=1;let submitted=false;let result=null;const startedAt=new Date().toISOString();
 function choices(target,name,items){items.forEach(([value,label])=>{const wrap=document.createElement('label');wrap.className='choice';const input=document.createElement('input');input.type='radio';input.name=name;input.value=value;input.required=true;const span=document.createElement('span');span.textContent=label;wrap.append(input,span);$(target).append(wrap);});}
